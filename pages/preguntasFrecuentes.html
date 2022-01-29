@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Preguntas Frecuentes - Imprenta Libregraff</title>
+    <meta name="keywords" content="libregraff, libreria, regalos, escuela, facultad, impresion, copiado, offset, gran formato, imprenta, mendiolaza, El talar">
+    <meta name="description" content="Este es el sitio web en el que encontrarás información de mi Imprenta Libregraff, una empresa dedicada a la producción gráfica en las áreas de impresión digital, impresión offset y gran formato. También tenes artículos de librería y regalería">
+    <!--LINK-BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--LINK CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!--LINK ICONS-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="nav-brand">
+            <img src="../img/isologoHorizontal.png" alt="isologotipo"> 
+        </div>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>                                   
+            <ul class="nav-menu nav-menu_visible">
+                <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">HOME</a></li>
+                <li class="nav-menu-item"><a href="./nosotros.html" class="nav-menu-link nav-link">NOSOTROS</a></li>
+                <li class="nav-menu-item"><a href="./preguntasFrecuentes.html" class="nav-menu-link nav-link">PREGUNTAS FRECUENTES</a></li>
+                <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">SERVICIOS</a></li>
+                <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link link--active">CONTACTO</a></li>
+            </ul>       
+        </nav>
+    </header>
+<!--MAIN-SERVICES-->
+  <main>
+        <section class="services">
+            <div class="container">
+                <h2 class="subtitle">Preguntas Frecuentes<span class="point">.</span></h2>
+                <p class="copy__section">Para nosotros es importante resolver sus inquietudes. Este espacio ha sido creado para responder algunas de las consultas más frecuentes.</p>
+            </div>
+        </section>
+        
+        <div class="categorias" id="categorias">
+            <div class="categoria" data-categoria="demasia">
+               <img src="../img/demasia.jpg" alt="demasia">
+                <p>Las demasías</p>
+            </div>
+            <div class="categoria activa">
+                <img src="../img/color.jpg" alt="color">
+                <p>Color</p>
+            </div>
+            <div class="categoria">
+                <img src="../img/resolucion.jpg" alt="resolucion">
+                <p>La Resolución</p>
+            </div>
+            <div class="categoria activa" data-categoria="formato">
+                <img src="../img/formato.jpg" alt="formato">
+                <p>El Formato</p>
+            </div>
+        </div>
+    <!--preguntas-->
+    <div class="contenedor-preguntas">
+        <div class="contenedor-pregunta">
+            <div class="pregunta">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Por qué son importantes las demasías?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        <strong>En el caso de impresión en papel</strong> (tarjetas, folletos, afiches, etiquetas, revistas, etc.), siempre debes contemplar excedentes y espacios libres alrededor del corte de 0.25 cm para evitar que se afecte el contenido por el guillotinado. Por ejemplo, si tu tarjeta personal debe medir 9x5 cm final, el archivo deberá ser de 9,5 x 5,5 cm, con un área para textos o "zona segura" de 8,5 x 4,5 cm.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Cómo preparo la gestión de color?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Salvo que sepas exactamente lo que estás haciendo en tu gestión de color, el PDF para impresión debería contener sólo objetos en CMYK sin perfiles asociados o incrustados. En el caso que tengas correctamente configurada la gestión de color y tu monitor esté calibrado, el PDF podrá contener también objetos en RGB con sus correspondientes perfiles ICC incrustados. También se pueden usar colores PANTONE, acordando de antemano el uso del mismo con la imprenta.Si la impresión es offset, lo mejor es utilizar el espacio de color CMYK y/o el PANTONE que corresponda. Los espacios de color permitidos para archivos de impresión son siempre CMYK, RGB y/o PANTONE. Nunca usar otros como LAB, indexado, etc. La única excepción es para los trabajos que sólo tienen negro. Estos deben ser enviados en escala de grises.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Cómo debo preparar la resolución de mi archivo? 
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            RESOLUCIÓN para papelería y folletería en general. Si lo que vas a imprimir es un folleto, una etiqueta pequeña o una tarjeta personal, lo recomendable es 300 DPI como máximo, y un mínimo de 200 DPI SIEMPRE a tamaño real. Exceder esta resolución no producirá ninguna mejora en la calidad de impresión, pero sí generará demora en la subida de tu archivo. Una resolución menor a 200 dpi puede producir el temido “pixelado”, sobre todo en textos pequeños y líneas finas.
+                            RESOLUCIÓN para impresiones en gran formato (Gigantografía). En estos casos se puede utilizar un máximo de 100 DPI y hasta un mínimo de 72 DPI. Si tu impresión supera los 9 m2, es probable que se haga muy pesado el archivo por lo que te recomendamos trabajar en escala, aclarándolo en la descripción del trabajo (ejemplo: giganto-50%.pdf).
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Cuál es el formato más recomendable?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            El formato ideal es un PDF, pero si es muy complicado o no dispones de las herramientas o el conocimiento para crearlo, puedes generar un JPG que cumpla los requisitos anteriores en cuanto a resolución. Hay que tener cuidado con la compresión (siempre utilizar “alta”).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer class="footer">
+        <div class="container footer__caption">
+            <section class="politicas">
+                    <div class="footer__copy">
+                    <p class="copyright">Imprenta-Libregraff; 2021 Todos los derechos reservados</p>
+    
+                    <a href="#" class="politica__privacidad politica__privacidad--margin">Politica de privacidad</a>
+                    <a href="#" class="politica__privacidad ">Terminos y condiciones</a>
+                </div>
+            </section>
+            <section class="social__Media">
+                <h3 class="title__footer">Buscanos en nuestras Redes Sociales</h3>
+                <div class="socialmedia">
+                    <p class="socialmedia__legend">Siguenos en:</p>
+                    <i class='socialmedia__icon bx bxl-facebook-circle'></i>
+                    <i class='socialmedia__icon bx bxl-linkedin-square'></i>                                                                                                        
+                    <i class='socialmedia__icon bx bxl-twitter' ></i>   
+                    <i class='socialmedia__icon bx bxl-instagram' ></i>
+                </div>
+            </section>
+        </div>
+
+        <div class="contact">
+            <div class="item__contact">
+                <i class='bx bx-copyright contact__icon' ></i>
+                <h3 class="contact__title">Imprenta Libregraff</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bx-mail-send contact__icon' ></i>
+                <h3 class="contact__title">libregraff@gmail.com</h3>
+            </div>
+            <div class="item__contact">
+                <i class='bx bxs-edit-location contact__icon' ></i>
+                <h3 class="contact__title">Av. Tissera 3405. L.1</h3>
+            </div>
+            <div class="item__contact item__contact--green">
+                <i class='bx bxl-whatsapp contact__icon contact__icon--modifier' ></i>
+                <h3 class="contact__whatsaap"><a href="https://api.whatsapp.com/send?phone=+5493516539975">Contáctanos ahora</a></h3>
+            </div>
+        </div>
+    </footer>
+    <!--LINK JAVASCRIPTS-->
+    <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script defer src="../js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
