@@ -31,96 +31,113 @@
                 <li class="nav-menu-item"><a href="./preguntasFrecuentes.html" class="nav-menu-link nav-link">PREGUNTAS FRECUENTES</a></li>
                 <li class="nav-menu-item"><a href="./servicios.html" class="nav-menu-link nav-link">SERVICIOS</a></li>
                 <li class="nav-menu-item"><a href="./contacto.html" class="nav-menu-link nav-link link--active">CONTACTO</a></li>
+                <li class="nav-menu-item"><a href="./juegos.html" class="nav-menu-link nav-link link--active menu__item--show">JUEGOS<img src="../assets/arrow.svg" class="menu__arrow"> </a>
+                    <ul class="menu__nesting">
+                            <li class="menu__inside">
+                                <a href="./simondicejuego.html" class="menu__link menu__link--iside">Simón Dice - Juego Interactivo</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="#" class="menu__link menu__link--iside">Piedra Papel Tijera - Juego interactivo</a>
+                            </li>
+                            <li class="menu__inside">
+                                <a href="./miListaDeCompras.html" class="menu__link menu__link--iside">Mi lista de compras</a>
+                            </li>
+                    </ul>
+                </li>
             </ul>       
         </nav>
     </header>
 <!--MAIN-SERVICES-->
-  <main>
+    <main>
         <section class="services">
             <div class="container">
                 <h2 class="subtitle">Preguntas Frecuentes<span class="point">.</span></h2>
                 <p class="copy__section">Para nosotros es importante resolver sus inquietudes. Este espacio ha sido creado para responder algunas de las consultas más frecuentes.</p>
             </div>
         </section>
-        
-        <div class="categorias" id="categorias">
-            <div class="categoria" data-categoria="demasia">
-               <img src="../img/demasia.jpg" alt="demasia">
-                <p>Las demasías</p>
-            </div>
-            <div class="categoria activa">
-                <img src="../img/color.jpg" alt="color">
-                <p>Color</p>
-            </div>
-            <div class="categoria">
-                <img src="../img/resolucion.jpg" alt="resolucion">
-                <p>La Resolución</p>
-            </div>
-            <div class="categoria activa" data-categoria="formato">
-                <img src="../img/formato.jpg" alt="formato">
-                <p>El Formato</p>
-            </div>
-        </div>
-    <!--preguntas-->
-    <div class="contenedor-preguntas">
-        <div class="contenedor-pregunta">
-            <div class="pregunta">
-                <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            ¿Por qué son importantes las demasías?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                        <strong>En el caso de impresión en papel</strong> (tarjetas, folletos, afiches, etiquetas, revistas, etc.), siempre debes contemplar excedentes y espacios libres alrededor del corte de 0.25 cm para evitar que se afecte el contenido por el guillotinado. Por ejemplo, si tu tarjeta personal debe medir 9x5 cm final, el archivo deberá ser de 9,5 x 5,5 cm, con un área para textos o "zona segura" de 8,5 x 4,5 cm.
-                        </div>
-                    </div>
-                    </div>
-                    <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            ¿Cómo preparo la gestión de color?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Salvo que sepas exactamente lo que estás haciendo en tu gestión de color, el PDF para impresión debería contener sólo objetos en CMYK sin perfiles asociados o incrustados. En el caso que tengas correctamente configurada la gestión de color y tu monitor esté calibrado, el PDF podrá contener también objetos en RGB con sus correspondientes perfiles ICC incrustados. También se pueden usar colores PANTONE, acordando de antemano el uso del mismo con la imprenta.Si la impresión es offset, lo mejor es utilizar el espacio de color CMYK y/o el PANTONE que corresponda. Los espacios de color permitidos para archivos de impresión son siempre CMYK, RGB y/o PANTONE. Nunca usar otros como LAB, indexado, etc. La única excepción es para los trabajos que sólo tienen negro. Estos deben ser enviados en escala de grises.
-                        </div>
-                    </div>
-                    </div>
-                    <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            ¿Cómo debo preparar la resolución de mi archivo? 
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            RESOLUCIÓN para papelería y folletería en general. Si lo que vas a imprimir es un folleto, una etiqueta pequeña o una tarjeta personal, lo recomendable es 300 DPI como máximo, y un mínimo de 200 DPI SIEMPRE a tamaño real. Exceder esta resolución no producirá ninguna mejora en la calidad de impresión, pero sí generará demora en la subida de tu archivo. Una resolución menor a 200 dpi puede producir el temido “pixelado”, sobre todo en textos pequeños y líneas finas.
-                            RESOLUCIÓN para impresiones en gran formato (Gigantografía). En estos casos se puede utilizar un máximo de 100 DPI y hasta un mínimo de 72 DPI. Si tu impresión supera los 9 m2, es probable que se haga muy pesado el archivo por lo que te recomendamos trabajar en escala, aclarándolo en la descripción del trabajo (ejemplo: giganto-50%.pdf).
-                        </div>
-                    </div>
-                    </div>
-                </div>
 
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            ¿Cuál es el formato más recomendable?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            El formato ideal es un PDF, pero si es muy complicado o no dispones de las herramientas o el conocimiento para crearlo, puedes generar un JPG que cumpla los requisitos anteriores en cuanto a resolución. Hay que tener cuidado con la compresión (siempre utilizar “alta”).
-                        </div>
-                    </div>
-                </div>
+        <div class="categorias" id="categorias">
+            <div class="categoria activa" data-categoria="demasias">
+                <img src="../img/demasia.svg" alt="demasia"/>
+                <p>Las Demasías</p>
+            </div>
+            <div class="categoria" data-categoria="impresiones">
+                <img src="../img/impresiones.svg" alt="impresiones"/>
+                <p>Impresiones</p>
+            </div>
+            <div class="categoria" data-categoria="formato">
+                <img src="../img/formato.svg" alt="formato"/>
+
+                <p>Formatos</p>
+            </div>
+            <div class="categoria" data-categoria="gestion-color">
+                <img src="../img/gestion-color.svg" alt="gestion-color"/>
+                <p>Gestión del Color</p>
             </div>
         </div>
-    </div>
-</main>
+
+        <div class="preguntas">
+
+            <!-- Preguntas demasia -->
+            <div class="contenedor-preguntas activo" data-categoria="demasias">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Qué son las demasías? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">La demasía (bleed) es un área impresa adicional en los márgenes del archivo que finalmente no formará parte de la pieza final. Se utiliza cuando tenemos imágenes o fondos que se imprimirán “al corte”, es decir, que llegarán hasta el borde del papel.</p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cuál es el Sangrado y dónde irán las marcas de corte? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">Para imprimir cualquier diseño es importante tener en cuenta el por donde se cortará ya que adaptar estas marcas en un trabajo prediseñado conlleva emplear mucho tiempo en la corrección. El sangrado siempre debe revisarse aunque es conocido que la medida de seguridad estándar es de 3mm.</p>
+                </div>
+            </div>
+
+            <!-- Preguntas impresiones -->
+            <div class="contenedor-preguntas" data-categoria="impresiones">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Qué tipo de archivos puedo imprimir? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">Lo más común es comprimir los archivos antes de subirlos y convertirlos en .zip o . rar. Normalmente los archivos que admitimos son los siguientes: .jpg, .tiff, .pdf, .ai, .psd, .eps, aunque si tienes archivos de otro tipo se pueden convertir para ser impresos con la mejor calidad.</p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cuándo está preparado un archivo para ser impreso? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">Una pregunta típica. Normalmente evaluamos 3 aspectos básicos para considerar un trabajo como preparado para ser impreso, primero comprobamos que el modo de color sea CMYK, a continuación comparamos las dimensiones y el sobredimensionamiento de la impresión y por último contrastamos la resolución, nunca inferior a 300 DPI.</p>
+                </div>
+            </div>
+
+            <!-- Preguntas Formatos -->
+            <div class="contenedor-preguntas" data-categoria="formato">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cuál es el formato más recomendable? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">PDF (Portable Document Format) este sería el formato más utilizado e indicado para todos los tipos de impresión.
+                        También procesamos .JPG Y .TIFF para acabados con un máximo de dos páginas, como Flyers, tarjetas, dípticos etc…</p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cómo debo preparar la resolución de mi archivo? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">RESOLUCIÓN para papelería y folletería en general. Si lo que vas a imprimir es un folleto, una etiqueta pequeña o una tarjeta personal, lo recomendable es 300 DPI como máximo, y un mínimo de 200 DPI SIEMPRE a tamaño real. Exceder esta resolución no producirá ninguna mejora en la calidad de impresión, pero sí generará demora en la subida de tu archivo. Una resolución menor a 200 dpi puede producir el temido “pixelado”, sobre todo en textos pequeños y líneas finas.
+                        RESOLUCIÓN para impresiones en gran formato (Gigantografía). En estos casos se puede utilizar un máximo de 100 DPI y hasta un mínimo de 72 DPI. Si tu impresión supera los 9 m2, es probable que se haga muy pesado el archivo por lo que te recomendamos trabajar en escala, aclarándolo en la descripción del trabajo (ejemplo: giganto-50%.pdf).</p>
+                </div>
+            </div>
+
+            <!-- Preguntas Gestion del color-->
+            <div class="contenedor-preguntas" data-categoria="gestion-color">
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Cómo preparo la gestión de color? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">
+                        Salvo que sepas exactamente lo que estás haciendo en tu gestión de color, el PDF para impresión debería contener sólo objetos en CMYK sin perfiles asociados o incrustados. En el caso que tengas correctamente configurada la gestión de color y tu monitor esté calibrado, el PDF podrá contener también objetos en RGB con sus correspondientes perfiles ICC incrustados. También se pueden usar colores PANTONE, acordando de antemano el uso del mismo con la imprenta.Si la impresión es offset, lo mejor es utilizar el espacio de color CMYK y/o el PANTONE que corresponda. Los espacios de color permitidos para archivos de impresión son siempre CMYK, RGB y/o PANTONE. Nunca usar otros como LAB, indexado, etc. La única excepción es para los trabajos que sólo tienen negro. Estos deben ser enviados en escala de grises.
+                        </p>
+                </div>
+                <div class="contenedor-pregunta">
+                    <p class="pregunta">¿Por qué son importantes los estándares de color? <img src="../img/suma.svg" alt="Abrir Respuesta" /></p>
+                    <p class="respuesta">El color de una marca se convierte en su tarjeta de presentación, creando asociaciones y expectativas, desencadenando imágenes y recuerdos mentales. Los estudios demuestran que el color adecuado puede aumentar el reconocimiento de la marca hasta en un 87%.
+                        En el desarrollo de productos, el color adecuado es el factor diferenciador que puede detener a alguien en su camino y captar su atención. También es el elemento de diseño más importante para reflejar el estado de ánimo y el estilo.
+                        El color adecuado puede vender productos e ideas de manera más efectiva en un 50-85% En Libregraff vamos a seguir unas reglas básicas y sencillas para que cualquier usuario del nivel que sea pueda estar tranquilo y enviar sus trabajos de imprenta sin problemas, muchos no son profesionales pero al menos te servirán para orientarte.</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </main>
+    
     <footer class="footer">
         <div class="container footer__caption">
             <section class="politicas">
@@ -165,6 +182,8 @@
     <!--LINK JAVASCRIPTS-->
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
     <script defer src="../js/index.js"></script>
+    <script src="../js/categorias.js"></script>
+    <script src="../js/preguntasFrecuentes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

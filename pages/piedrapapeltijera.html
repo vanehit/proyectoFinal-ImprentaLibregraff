@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Nosotros - Imprenta Libregraff</title>
+    <title>Página Piedra Papel Tijera - Imprenta Libregraff</title>
     <meta name="keywords" content="libregraff, libreria, regalos, escuela, facultad, impresion, copiado, offset, gran formato, imprenta, mendiolaza, El talar">
     <meta name="description" content="Este es el sitio web en el que encontrarás información de mi Imprenta Libregraff, una empresa dedicada a la producción gráfica en las áreas de impresión digital, impresión offset y gran formato. También tenes artículos de librería y regalería">
     <!--LINK-BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--LINK CSS-->
-    <link rel="stylesheet" href="../css/styles.css">
     <!--LINK ICONS-->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+     <!-- ANIMATE CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/d3.min.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+     
+     <!--LINK CSS-->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
     <header class="header">
         <div class="nav-brand">
             <img src="../img/isologoHorizontal.png" alt="isologotipo"> 
         </div>
-        <nav class="nav"> 
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <i class="fas fa-bars"></i>
-              </button>                                  
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Abrir menú">
+            <i class="fas fa-bars"></i>
+          </button>                                   
             <ul class="nav-menu nav-menu_visible">
                 <li class="nav-menu-item"><a href="../index.html" class="nav-menu-link nav-link">HOME</a></li>
                 <li class="nav-menu-item"><a href="./nosotros.html" class="nav-menu-link nav-link">NOSOTROS</a></li>
@@ -34,7 +41,7 @@
                                 <a href="./simondicejuego.html" class="menu__link menu__link--iside">Simón Dice - Juego Interactivo</a>
                             </li>
                             <li class="menu__inside">
-                                <a href="#" class="menu__link menu__link--iside">Piedra Papel Tijera - Juego interactivo</a>
+                                <a href="./piedrapapeltijera.html" class="menu__link menu__link--iside">Piedra Papel Tijera - Juego interactivo</a>
                             </li>
                             <li class="menu__inside">
                                 <a href="./miListaDeCompras.html" class="menu__link menu__link--iside">Mi lista de compras</a>
@@ -44,46 +51,35 @@
             </ul>       
         </nav>
     </header>
-
 <!--MAIN-SERVICES-->
-    <main>
-        <section class="services">
-            <div class="container">
-                <h2 class="subtitle">Sobre Nosotros<span class="point">.</span></h2>
-                <p class="copy__section">SOMOS UNA EMPRESA CORDOBESA DEDICADA A LA PRODUCCIÓN GRÁFICA, CON MÁS DE 15 AÑOS DE TRAYECTORIA EN EL MERCADO.</p>
+<main class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1>Piedra Papel Tijera-Juego Interactivo</h1>
+        </div>
+        <div class="container__juego">
+            <div class="score-container">
+                <span class="user">TU</span>
+                <span id="score"></span>
+                <span class="com">COM</span>
             </div>
-        </section>
-
-        <!-- Contenido principal-->
-        <div class="container px-4 px-lg-7">
-            <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-5"><img  class="img-fluid rounded mb-4 mb-lg-0" src="../img/img4.jpg" alt="Local" /></div>
-                <div class="col-lg-7">
-                    <h1 class="font-weight-light">LIBREGRAFF, EMPRESA LÍDER EN EL RUBRO:</h1>
-                    <ul class="col">
-                        <li class="col-item">Somos los únicos en la región que ofrecemos un servicio integral.</li>
-                        <li class="col-item">Contamos con clientes estables, confiables y consolidados.</li>
-                        <li class="col-item">Disponemos del equipamiento y la tecnología necesaria para brindar un producto de excelente calidad.</li>
-                        <li class="col-item">Atendido por sus propios dueños</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container px-4 px-lg-5">
-                <!-- Heading Row-->
-                <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                    <div class="col-lg-5"> 
-                        <h1 class="font-weight-light">HISTORIA</h1>
-                        <p>COMPROMISO SOSTENIDO EN EL TIEMPO
-                            Libregraff nació en el año 2004. En un principio proveíamos de apuntes, copias y elementos de librería. Con el tiempo, decidimos incursionar en el campo de las artes gráficas. Es así como nos iniciamos en la impresión masiva de apuntes, formularios comerciales.</p>
-                    </div>
-                    <div class="col-lg-7">
-                        <h1 class="font-weight-light">VALORES</h1>
-                        <p>Nuestros valores distintivos son la responsabilidad, el compromiso, la honestidad y la ética profesional en el trato con los clientes, el trabajo en equipo, la calidad, el cumplimiento de los plazos de entrega y la innovación; atributos que nos han convertido en una empresa líder en el mercado gráfico local y regional.</p>
-                    </div>
-                </div>
-            
-</main>
+            <div class="buttons">
+                <button id="papel" class="bn" onclick="game(this.value)" value="papel"><i class="far fa-hand-paper"></i></button>
+                <button id="piedra" class="bn" onclick="game(this.value)" value="piedra"><i class="far fa-hand-rock"></i></button>
+                <button id="tijera" class="bn" onclick="game(this.value)" value="tijera"><i class="far fa-hand-scissors"></i></button>
+           </div>
+           <div id="challenge">
+               <div id="you">
+                   <div id="YourObject"></div>
+                   <div class="who">Tu</div>
+               </div>
+               <div id="result"><p id="who"><p></div>
+               <div id="com">
+                   <div id="ComObject"></div>
+                   <div class="who">Computadora</div>
+               </div>
+        </div>
+                    
     <footer class="footer">
         <div class="container footer__caption">
             <section class="politicas">
@@ -126,7 +122,10 @@
         </div>
     </footer>
     <!--LINK JAVASCRIPTS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7e5b2d153f.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/piedrapapeltijera.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <script defer src="../js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
